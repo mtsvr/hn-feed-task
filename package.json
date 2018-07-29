@@ -1,0 +1,15 @@
+{
+  "name": "reigndesign-task",
+  "version": "1.0.0",
+  "description": "NodeJS task for reigndesign",
+  "main": "index.js",
+  "author": "Matias Vera Aravena",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.1.1",
+    "nodemon": "^1.18.3",
+    "pug": "^2.0.3",
+    "request": "^2.87.0"
+  }
+}
