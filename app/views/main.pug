@@ -1,0 +1,9 @@
+table
+    tbody
+        for dat in data
+            tr
+                if dat.story_title!=null
+                    td #{dat.story_title}
+                else
+                    td #{dat.title}
+                td #{dat.author}

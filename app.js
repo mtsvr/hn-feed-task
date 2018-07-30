@@ -19,7 +19,7 @@ const app = express();
 //Define listening port
 const PORT = 3000;
 
-app.set('views',path.join(__dirname,'components'));
+app.set('views',path.join(__dirname,'app/views'));
 app.set('view engine','pug');
 
 app.use('/articles',articles);
@@ -85,6 +85,7 @@ setInterval(function(){
                         });
                 });     
             } catch (err){
+                console.log(err);
                 console.log('non JSON object response');
             }
         }
