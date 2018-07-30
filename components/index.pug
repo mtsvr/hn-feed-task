@@ -4,3 +4,8 @@ html
         title HN Feed
     body
         h1 HN Feed 
+        ul
+            each d in data
+                li= d
+            else 
+                li There are no values to show
