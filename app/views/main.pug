@@ -1,9 +1,18 @@
-table
-    tbody
-        for dat in data
-            tr
-                if dat.story_title!=null
-                    td #{dat.story_title}
-                else
-                    td #{dat.title}
-                td #{dat.author}
+.center-table
+    table.highlight
+        tbody
+            for dat in data
+                tr(onclick='move('+'"'+(dat.story_url!=null?dat.story_url:dat.url)+'"'+')')
+                    td
+                        span
+                            if dat.story_title!=null
+                                strong.title-text #{dat.story_title}.
+                            else
+                                strong.title-text #{dat.title}.
+                            span.author-text   - #{dat.author} -
+                    td
+                        span.title-text #{dat.created_at.toLocaleString()}
+                        
+                    td
+                        span.delete-button
+                            i.material-icons delete

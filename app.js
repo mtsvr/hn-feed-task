@@ -21,6 +21,7 @@ const PORT = 3000;
 
 app.set('views',path.join(__dirname,'app/views'));
 app.set('view engine','pug');
+app.use(express.static(path.join(__dirname, 'static')));
 
 app.use('/articles',articles);
 

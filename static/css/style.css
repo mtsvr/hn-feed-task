@@ -1,0 +1,42 @@
+html, body {
+    overflow: auto;
+}
+.center-table {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.top-banner {
+    min-height: 5em;
+}
+
+.title-text {
+    color: #333;
+}
+
+.author-text {
+    color: #999
+}
+
+.banner-container {
+    padding-left: 3em;
+    padding-top:3%;
+    padding-bottom:3%;
+}
+
+.banner-title {
+    margin-top: 0pt !important;
+    margin-bottom: 1% !important
+}
+
+.banner-subtitle {
+    margin-top:0pt;
+}
+
+table .delete-button {
+    visibility: hidden;
+}
+
+table tr:hover .delete-button {
+    visibility: visible;
+}
